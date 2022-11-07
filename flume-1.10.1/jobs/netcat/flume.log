@@ -1,0 +1,53 @@
+25 十月 2022 16:08:31,610 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:c1
+25 十月 2022 16:08:31,613 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:c1
+25 十月 2022 16:08:31,613 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r1
+25 十月 2022 16:08:31,613 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r1
+25 十月 2022 16:08:31,613 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r1
+25 十月 2022 16:08:31,613 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1117)  - Added sinks: k1 Agent: a1
+25 十月 2022 16:08:31,613 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:c1
+25 十月 2022 16:08:31,613 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k1
+25 十月 2022 16:08:31,613 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r1
+25 十月 2022 16:08:31,614 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k1
+25 十月 2022 16:08:31,614 WARN  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.validateConfigFilterSet:623)  - Agent configuration for 'a1' has no configfilters.
+25 十月 2022 16:08:31,627 INFO  [main] (org.apache.flume.conf.FlumeConfiguration.validateConfiguration:163)  - Post-validation flume configuration contains configuration for agents: [a1]
+25 十月 2022 16:08:31,627 INFO  [main] (org.apache.flume.node.AbstractConfigurationProvider.loadChannels:154)  - Creating channels
+25 十月 2022 16:08:31,634 INFO  [main] (org.apache.flume.channel.DefaultChannelFactory.create:42)  - Creating instance of channel c1 type memory
+25 十月 2022 16:08:31,637 INFO  [main] (org.apache.flume.node.AbstractConfigurationProvider.loadChannels:208)  - Created channel c1
+25 十月 2022 16:08:31,638 INFO  [main] (org.apache.flume.source.DefaultSourceFactory.create:41)  - Creating instance of source r1, type netcat
+25 十月 2022 16:08:31,645 INFO  [main] (org.apache.flume.sink.DefaultSinkFactory.create:42)  - Creating instance of sink: k1, type: logger
+25 十月 2022 16:08:31,647 INFO  [main] (org.apache.flume.node.AbstractConfigurationProvider.getConfiguration:123)  - Channel c1 connected to [r1, k1]
+25 十月 2022 16:08:31,648 INFO  [main] (org.apache.flume.node.Application.initializeAllComponents:177)  - Initializing components
+25 十月 2022 16:08:31,652 INFO  [main] (org.apache.flume.node.Application.startAllComponents:207)  - Starting new configuration:{ sourceRunners:{r1=EventDrivenSourceRunner: { source:org.apache.flume.source.NetcatSource{name:r1,state:IDLE} }} sinkRunners:{k1=SinkRunner: { policy:org.apache.flume.sink.DefaultSinkProcessor@5b67bb7e counterGroup:{ name:null counters:{} } }} channels:{c1=org.apache.flume.channel.MemoryChannel{name: c1}} }
+25 十月 2022 16:08:31,652 INFO  [main] (org.apache.flume.node.Application.startAllComponents:214)  - Starting Channel c1
+25 十月 2022 16:08:31,656 INFO  [main] (org.apache.flume.node.Application.startAllComponents:229)  - Waiting for channel: c1 to start. Sleeping for 500 ms
+25 十月 2022 16:08:31,657 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.instrumentation.MonitoredCounterGroup.register:119)  - Monitored counter group for type: CHANNEL, name: c1: Successfully registered new MBean.
+25 十月 2022 16:08:31,657 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.instrumentation.MonitoredCounterGroup.start:95)  - Component type: CHANNEL, name: c1 started
+25 十月 2022 16:08:32,156 INFO  [main] (org.apache.flume.node.Application.startAllComponents:241)  - Starting Sink k1
+25 十月 2022 16:08:32,157 INFO  [main] (org.apache.flume.node.Application.startAllComponents:252)  - Starting Source r1
+25 十月 2022 16:08:32,157 INFO  [lifecycleSupervisor-1-2] (org.apache.flume.source.NetcatSource.start:155)  - Source starting
+25 十月 2022 16:08:32,171 INFO  [lifecycleSupervisor-1-2] (org.apache.flume.source.NetcatSource.start:166)  - Created serverSocket:sun.nio.ch.ServerSocketChannelImpl[/127.0.0.1:44444]
+25 十月 2022 16:08:47,565 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.LoggerSink.process:95)  - Event: { headers:{} body: 68 65 6C 6C 6F 77 6F 75 6A 6A 6B 69 73 66 69 68 hellowoujjkisfih }
+25 十月 2022 16:09:04,036 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.LoggerSink.process:95)  - Event: { headers:{} body: }
+25 十月 2022 16:09:09,828 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.LoggerSink.process:95)  - Event: { headers:{} body: 33 2B 33 3D 36                                  3+3=6 }
+25 十月 2022 16:13:15,844 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.LoggerSink.process:95)  - Event: { headers:{} body: 68 65 6C 6C 6F                                  hello }
+25 十月 2022 16:13:18,736 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.LoggerSink.process:95)  - Event: { headers:{} body: 69 75 64 6A 68                                  iudjh }
+25 十月 2022 16:13:22,933 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.LoggerSink.process:95)  - Event: { headers:{} body: 1B 65 78 69 74                                  .exit }
+25 十月 2022 16:13:24,470 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.LoggerSink.process:95)  - Event: { headers:{} body: 65 78 69 74                                     exit }
+25 十月 2022 16:13:37,295 INFO  [agent-shutdown-hook] (org.apache.flume.node.Application.stopAllComponents:140)  - Shutting down configuration: { sourceRunners:{r1=EventDrivenSourceRunner: { source:org.apache.flume.source.NetcatSource{name:r1,state:START} }} sinkRunners:{k1=SinkRunner: { policy:org.apache.flume.sink.DefaultSinkProcessor@5b67bb7e counterGroup:{ name:null counters:{runner.backoffs.consecutive=3, runner.backoffs=43} } }} channels:{c1=org.apache.flume.channel.MemoryChannel{name: c1}} }
+25 十月 2022 16:13:37,295 INFO  [agent-shutdown-hook] (org.apache.flume.node.Application.stopAllComponents:144)  - Stopping Source r1
+25 十月 2022 16:13:37,295 INFO  [agent-shutdown-hook] (org.apache.flume.lifecycle.LifecycleSupervisor.unsupervise:169)  - Stopping component: EventDrivenSourceRunner: { source:org.apache.flume.source.NetcatSource{name:r1,state:START} }
+25 十月 2022 16:13:37,295 INFO  [agent-shutdown-hook] (org.apache.flume.source.NetcatSource.stop:197)  - Source stopping
+25 十月 2022 16:13:37,296 INFO  [agent-shutdown-hook] (org.apache.flume.node.Application.stopAllComponents:154)  - Stopping Sink k1
+25 十月 2022 16:13:37,296 INFO  [agent-shutdown-hook] (org.apache.flume.lifecycle.LifecycleSupervisor.unsupervise:169)  - Stopping component: SinkRunner: { policy:org.apache.flume.sink.DefaultSinkProcessor@5b67bb7e counterGroup:{ name:null counters:{runner.backoffs.consecutive=3, runner.backoffs=43} } }
+25 十月 2022 16:13:37,297 INFO  [agent-shutdown-hook] (org.apache.flume.node.Application.stopAllComponents:164)  - Stopping Channel c1
+25 十月 2022 16:13:37,297 INFO  [agent-shutdown-hook] (org.apache.flume.lifecycle.LifecycleSupervisor.unsupervise:169)  - Stopping component: org.apache.flume.channel.MemoryChannel{name: c1}
+25 十月 2022 16:13:37,297 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:149)  - Component type: CHANNEL, name: c1 stopped
+25 十月 2022 16:13:37,297 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:155)  - Shutdown Metric for type: CHANNEL, name: c1. channel.start.time == 1666685311657
+25 十月 2022 16:13:37,297 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:161)  - Shutdown Metric for type: CHANNEL, name: c1. channel.stop.time == 1666685617297
+25 十月 2022 16:13:37,297 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: c1. channel.capacity == 1000
+25 十月 2022 16:13:37,297 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: c1. channel.current.size == 0
+25 十月 2022 16:13:37,297 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: c1. channel.event.put.attempt == 7
+25 十月 2022 16:13:37,298 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: c1. channel.event.put.success == 7
+25 十月 2022 16:13:37,298 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: c1. channel.event.take.attempt == 50
+25 十月 2022 16:13:37,298 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: c1. channel.event.take.success == 7
+25 十月 2022 16:13:37,298 INFO  [agent-shutdown-hook] (org.apache.flume.lifecycle.LifecycleSupervisor.stop:78)  - Stopping lifecycle supervisor 18

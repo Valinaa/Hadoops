@@ -1,0 +1,117 @@
+25 十月 2022 20:38:13,431 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:c3
+25 十月 2022 20:38:13,437 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k3
+25 十月 2022 20:38:13,437 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:c3
+25 十月 2022 20:38:13,437 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r3
+25 十月 2022 20:38:13,437 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k3
+25 十月 2022 20:38:13,437 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r3
+25 十月 2022 20:38:13,437 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k3
+25 十月 2022 20:38:13,437 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k3
+25 十月 2022 20:38:13,437 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r3
+25 十月 2022 20:38:13,437 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r3
+25 十月 2022 20:38:13,437 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k3
+25 十月 2022 20:38:13,438 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r3
+25 十月 2022 20:38:13,438 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k3
+25 十月 2022 20:38:13,438 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k3
+25 十月 2022 20:38:13,438 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k3
+25 十月 2022 20:38:13,438 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k3
+25 十月 2022 20:38:13,438 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k3
+25 十月 2022 20:38:13,438 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r3
+25 十月 2022 20:38:13,438 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1117)  - Added sinks: k3 Agent: a3
+25 十月 2022 20:38:13,438 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:c3
+25 十月 2022 20:38:13,438 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k3
+25 十月 2022 20:38:13,438 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k3
+25 十月 2022 20:38:13,438 INFO  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k3
+25 十月 2022 20:38:13,438 WARN  [main] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.validateConfigFilterSet:623)  - Agent configuration for 'a3' has no configfilters.
+25 十月 2022 20:38:13,454 INFO  [main] (org.apache.flume.conf.FlumeConfiguration.validateConfiguration:163)  - Post-validation flume configuration contains configuration for agents: [a3]
+25 十月 2022 20:38:13,454 INFO  [main] (org.apache.flume.node.AbstractConfigurationProvider.loadChannels:154)  - Creating channels
+25 十月 2022 20:38:13,461 INFO  [main] (org.apache.flume.channel.DefaultChannelFactory.create:42)  - Creating instance of channel c3 type memory
+25 十月 2022 20:38:13,465 INFO  [main] (org.apache.flume.node.AbstractConfigurationProvider.loadChannels:208)  - Created channel c3
+25 十月 2022 20:38:13,465 INFO  [main] (org.apache.flume.source.DefaultSourceFactory.create:41)  - Creating instance of source r3, type TAILDIR
+25 十月 2022 20:38:13,480 INFO  [main] (org.apache.flume.sink.DefaultSinkFactory.create:42)  - Creating instance of sink: k3, type: hdfs
+25 十月 2022 20:38:13,488 INFO  [main] (org.apache.flume.node.AbstractConfigurationProvider.getConfiguration:123)  - Channel c3 connected to [r3, k3]
+25 十月 2022 20:38:13,488 INFO  [main] (org.apache.flume.node.Application.initializeAllComponents:177)  - Initializing components
+25 十月 2022 20:38:13,489 INFO  [main] (org.apache.flume.node.Application.startAllComponents:207)  - Starting new configuration:{ sourceRunners:{r3=PollableSourceRunner: { source:Taildir source: { positionFile: /opt/big-data/flume-1.10.1/jobs/taildir/tail_dir.json, skipToEnd: false, byteOffsetHeader: false, idleTimeout: 120000, writePosInterval: 3000 } counterGroup:{ name:null counters:{} } }} sinkRunners:{k3=SinkRunner: { policy:org.apache.flume.sink.DefaultSinkProcessor@7922d892 counterGroup:{ name:null counters:{} } }} channels:{c3=org.apache.flume.channel.MemoryChannel{name: c3}} }
+25 十月 2022 20:38:13,489 INFO  [main] (org.apache.flume.node.Application.startAllComponents:214)  - Starting Channel c3
+25 十月 2022 20:38:13,490 INFO  [main] (org.apache.flume.node.Application.startAllComponents:229)  - Waiting for channel: c3 to start. Sleeping for 500 ms
+25 十月 2022 20:38:13,492 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.instrumentation.MonitoredCounterGroup.register:119)  - Monitored counter group for type: CHANNEL, name: c3: Successfully registered new MBean.
+25 十月 2022 20:38:13,492 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.instrumentation.MonitoredCounterGroup.start:95)  - Component type: CHANNEL, name: c3 started
+25 十月 2022 20:38:13,991 INFO  [main] (org.apache.flume.node.Application.startAllComponents:241)  - Starting Sink k3
+25 十月 2022 20:38:13,993 INFO  [main] (org.apache.flume.node.Application.startAllComponents:252)  - Starting Source r3
+25 十月 2022 20:38:13,994 INFO  [lifecycleSupervisor-1-1] (org.apache.flume.source.taildir.TaildirSource.start:94)  - r3 TaildirSource source starting with directory: {f1=/opt/big-data/flume-1.10.1/jobs/taildir/files/.*file.*, f2=/opt/big-data/flume-1.10.1/jobs/taildir/files2/.*log.*}
+25 十月 2022 20:38:13,994 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.instrumentation.MonitoredCounterGroup.register:119)  - Monitored counter group for type: SINK, name: k3: Successfully registered new MBean.
+25 十月 2022 20:38:13,994 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.instrumentation.MonitoredCounterGroup.start:95)  - Component type: SINK, name: k3 started
+25 十月 2022 20:38:13,998 INFO  [lifecycleSupervisor-1-1] (org.apache.flume.source.taildir.ReliableTaildirEventReader.<init>:84)  - taildirCache: [{filegroup='f1', filePattern='/opt/big-data/flume-1.10.1/jobs/taildir/files/.*file.*', cached=true}, {filegroup='f2', filePattern='/opt/big-data/flume-1.10.1/jobs/taildir/files2/.*log.*', cached=true}]
+25 十月 2022 20:38:13,999 INFO  [lifecycleSupervisor-1-1] (org.apache.flume.source.taildir.ReliableTaildirEventReader.<init>:85)  - headerTable: {}
+25 十月 2022 20:38:14,001 INFO  [lifecycleSupervisor-1-1] (org.apache.flume.source.taildir.ReliableTaildirEventReader.<init>:95)  - Updating position from position file: /opt/big-data/flume-1.10.1/jobs/taildir/tail_dir.json
+25 十月 2022 20:38:14,002 INFO  [lifecycleSupervisor-1-1] (org.apache.flume.source.taildir.ReliableTaildirEventReader.loadPositionFile:145)  - File not found: /opt/big-data/flume-1.10.1/jobs/taildir/tail_dir.json, not updating position
+25 十月 2022 20:38:14,003 INFO  [lifecycleSupervisor-1-1] (org.apache.flume.instrumentation.MonitoredCounterGroup.register:119)  - Monitored counter group for type: SOURCE, name: r3: Successfully registered new MBean.
+25 十月 2022 20:38:14,003 INFO  [lifecycleSupervisor-1-1] (org.apache.flume.instrumentation.MonitoredCounterGroup.start:95)  - Component type: SOURCE, name: r3 started
+25 十月 2022 20:38:34,008 INFO  [PollableSourceRunner-TaildirSource-r3] (org.apache.flume.source.taildir.ReliableTaildirEventReader.openFile:290)  - Opening file: /opt/big-data/flume-1.10.1/jobs/taildir/files/file1.txt, inode: 1049693, pos: 0
+25 十月 2022 20:40:14,017 INFO  [PollableSourceRunner-TaildirSource-r3] (org.apache.flume.source.taildir.TaildirSource.closeTailFiles:307)  - Closed file: /opt/big-data/flume-1.10.1/jobs/taildir/files/file1.txt, inode: 1049693, pos: 0
+25 十月 2022 20:40:54,021 INFO  [PollableSourceRunner-TaildirSource-r3] (org.apache.flume.source.taildir.ReliableTaildirEventReader.openFile:290)  - Opening file: /opt/big-data/flume-1.10.1/jobs/taildir/files/file1.txt, inode: 1049693, pos: 0
+25 十月 2022 20:40:54,036 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+25 十月 2022 20:40:54,139 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:246)  - Creating hdfs://Master:9000/flume/upload2/20221025/20/upload-.1666701654037.tmp
+25 十月 2022 20:40:54,297 WARN  [hdfs-k3-call-runner-0] (org.apache.hadoop.util.NativeCodeLoader.<clinit>:60)  - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+25 十月 2022 20:41:55,223 INFO  [hdfs-k3-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:391)  - Writer callback called.
+25 十月 2022 20:41:55,223 INFO  [hdfs-k3-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.doClose:438)  - Closing hdfs://Master:9000/flume/upload2/20221025/20/upload-.1666701654037.tmp
+25 十月 2022 20:41:55,291 INFO  [hdfs-k3-call-runner-4] (org.apache.flume.sink.hdfs.BucketWriter$7.call:681)  - Renaming hdfs://Master:9000/flume/upload2/20221025/20/upload-.1666701654037.tmp to hdfs://Master:9000/flume/upload2/20221025/20/upload-.1666701654037
+25 十月 2022 20:42:09,029 INFO  [PollableSourceRunner-TaildirSource-r3] (org.apache.flume.source.taildir.ReliableTaildirEventReader.openFile:290)  - Opening file: /opt/big-data/flume-1.10.1/jobs/taildir/files/file2.txt, inode: 1049694, pos: 0
+25 十月 2022 20:42:09,030 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+25 十月 2022 20:42:09,044 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:246)  - Creating hdfs://Master:9000/flume/upload2/20221025/20/upload-.1666701729031.tmp
+25 十月 2022 20:42:54,102 INFO  [PollableSourceRunner-TaildirSource-r3] (org.apache.flume.source.taildir.TaildirSource.closeTailFiles:307)  - Closed file: /opt/big-data/flume-1.10.1/jobs/taildir/files/file1.txt, inode: 1049693, pos: 11
+25 十月 2022 20:43:09,066 INFO  [hdfs-k3-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:391)  - Writer callback called.
+25 十月 2022 20:43:09,066 INFO  [hdfs-k3-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.doClose:438)  - Closing hdfs://Master:9000/flume/upload2/20221025/20/upload-.1666701729031.tmp
+25 十月 2022 20:43:09,085 INFO  [hdfs-k3-call-runner-9] (org.apache.flume.sink.hdfs.BucketWriter$7.call:681)  - Renaming hdfs://Master:9000/flume/upload2/20221025/20/upload-.1666701729031.tmp to hdfs://Master:9000/flume/upload2/20221025/20/upload-.1666701729031
+25 十月 2022 20:44:09,108 INFO  [PollableSourceRunner-TaildirSource-r3] (org.apache.flume.source.taildir.TaildirSource.closeTailFiles:307)  - Closed file: /opt/big-data/flume-1.10.1/jobs/taildir/files/file2.txt, inode: 1049694, pos: 7
+25 十月 2022 20:44:19,109 INFO  [PollableSourceRunner-TaildirSource-r3] (org.apache.flume.source.taildir.ReliableTaildirEventReader.openFile:290)  - Opening file: /opt/big-data/flume-1.10.1/jobs/taildir/files2/hi.log.txt, inode: 1049696, pos: 0
+25 十月 2022 20:44:19,110 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+25 十月 2022 20:44:19,125 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:246)  - Creating hdfs://Master:9000/flume/upload2/20221025/20/upload-.1666701859110.tmp
+25 十月 2022 20:45:19,147 INFO  [hdfs-k3-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:391)  - Writer callback called.
+25 十月 2022 20:45:19,147 INFO  [hdfs-k3-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.doClose:438)  - Closing hdfs://Master:9000/flume/upload2/20221025/20/upload-.1666701859110.tmp
+25 十月 2022 20:45:19,169 INFO  [hdfs-k3-call-runner-4] (org.apache.flume.sink.hdfs.BucketWriter$7.call:681)  - Renaming hdfs://Master:9000/flume/upload2/20221025/20/upload-.1666701859110.tmp to hdfs://Master:9000/flume/upload2/20221025/20/upload-.1666701859110
+25 十月 2022 20:46:24,119 INFO  [PollableSourceRunner-TaildirSource-r3] (org.apache.flume.source.taildir.TaildirSource.closeTailFiles:307)  - Closed file: /opt/big-data/flume-1.10.1/jobs/taildir/files2/hi.log.txt, inode: 1049696, pos: 9
+25 十月 2022 21:43:08,248 INFO  [agent-shutdown-hook] (org.apache.flume.node.Application.stopAllComponents:140)  - Shutting down configuration: { sourceRunners:{r3=PollableSourceRunner: { source:Taildir source: { positionFile: /opt/big-data/flume-1.10.1/jobs/taildir/tail_dir.json, skipToEnd: false, byteOffsetHeader: false, idleTimeout: 120000, writePosInterval: 3000 } counterGroup:{ name:null counters:{runner.backoffs.consecutive=779, runner.polls=779, runner.backoffs=779} } }} sinkRunners:{k3=SinkRunner: { policy:org.apache.flume.sink.DefaultSinkProcessor@7922d892 counterGroup:{ name:null counters:{runner.backoffs.consecutive=442, runner.backoffs=490} } }} channels:{c3=org.apache.flume.channel.MemoryChannel{name: c3}} }
+25 十月 2022 21:43:08,251 INFO  [agent-shutdown-hook] (org.apache.flume.node.Application.stopAllComponents:144)  - Stopping Source r3
+25 十月 2022 21:43:08,251 INFO  [agent-shutdown-hook] (org.apache.flume.lifecycle.LifecycleSupervisor.unsupervise:169)  - Stopping component: PollableSourceRunner: { source:Taildir source: { positionFile: /opt/big-data/flume-1.10.1/jobs/taildir/tail_dir.json, skipToEnd: false, byteOffsetHeader: false, idleTimeout: 120000, writePosInterval: 3000 } counterGroup:{ name:null counters:{runner.backoffs.consecutive=779, runner.polls=779, runner.backoffs=779} } }
+25 十月 2022 21:43:08,252 INFO  [PollableSourceRunner-TaildirSource-r3] (org.apache.flume.source.PollableSourceRunner$PollingRunner.run:143)  - Source runner interrupted. Exiting
+25 十月 2022 21:43:08,254 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:149)  - Component type: SOURCE, name: r3 stopped
+25 十月 2022 21:43:08,254 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:155)  - Shutdown Metric for type: SOURCE, name: r3. source.start.time == 1666701494003
+25 十月 2022 21:43:08,254 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:161)  - Shutdown Metric for type: SOURCE, name: r3. source.stop.time == 1666705388254
+25 十月 2022 21:43:08,254 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r3. src.append-batch.accepted == 3
+25 十月 2022 21:43:08,254 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r3. src.append-batch.received == 3
+25 十月 2022 21:43:08,254 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r3. src.append.accepted == 0
+25 十月 2022 21:43:08,254 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r3. src.append.received == 0
+25 十月 2022 21:43:08,254 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r3. src.channel.write.fail == 0
+25 十月 2022 21:43:08,254 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r3. src.event.read.fail == 0
+25 十月 2022 21:43:08,254 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r3. src.events.accepted == 3
+25 十月 2022 21:43:08,255 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r3. src.events.received == 3
+25 十月 2022 21:43:08,255 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r3. src.generic.processing.fail == 0
+25 十月 2022 21:43:08,255 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r3. src.open-connection.count == 0
+25 十月 2022 21:43:08,255 INFO  [agent-shutdown-hook] (org.apache.flume.source.taildir.TaildirSource.stop:144)  - Taildir source r3 stopped. Metrics: SOURCE:r3{src.events.accepted=3, src.open-connection.count=0, src.append.received=0, src.channel.write.fail=0, src.append-batch.received=3, src.generic.processing.fail=0, src.append-batch.accepted=3, src.append.accepted=0, src.events.received=3, src.event.read.fail=0}
+25 十月 2022 21:43:08,255 INFO  [agent-shutdown-hook] (org.apache.flume.node.Application.stopAllComponents:154)  - Stopping Sink k3
+25 十月 2022 21:43:08,255 INFO  [agent-shutdown-hook] (org.apache.flume.lifecycle.LifecycleSupervisor.unsupervise:169)  - Stopping component: SinkRunner: { policy:org.apache.flume.sink.DefaultSinkProcessor@7922d892 counterGroup:{ name:null counters:{runner.backoffs.consecutive=442, runner.backoffs=490} } }
+25 十月 2022 21:43:08,265 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:149)  - Component type: SINK, name: k3 stopped
+25 十月 2022 21:43:08,265 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:155)  - Shutdown Metric for type: SINK, name: k3. sink.start.time == 1666701493994
+25 十月 2022 21:43:08,265 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:161)  - Shutdown Metric for type: SINK, name: k3. sink.stop.time == 1666705388264
+25 十月 2022 21:43:08,265 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k3. sink.batch.complete == 0
+25 十月 2022 21:43:08,265 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k3. sink.batch.empty == 490
+25 十月 2022 21:43:08,265 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k3. sink.batch.underflow == 3
+25 十月 2022 21:43:08,265 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k3. sink.channel.read.fail == 0
+25 十月 2022 21:43:08,265 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k3. sink.connection.closed.count == 3
+25 十月 2022 21:43:08,265 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k3. sink.connection.creation.count == 3
+25 十月 2022 21:43:08,265 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k3. sink.connection.failed.count == 0
+25 十月 2022 21:43:08,265 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k3. sink.event.drain.attempt == 3
+25 十月 2022 21:43:08,265 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k3. sink.event.drain.sucess == 3
+25 十月 2022 21:43:08,265 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k3. sink.event.write.fail == 0
+25 十月 2022 21:43:08,266 INFO  [agent-shutdown-hook] (org.apache.flume.node.Application.stopAllComponents:164)  - Stopping Channel c3
+25 十月 2022 21:43:08,266 INFO  [agent-shutdown-hook] (org.apache.flume.lifecycle.LifecycleSupervisor.unsupervise:169)  - Stopping component: org.apache.flume.channel.MemoryChannel{name: c3}
+25 十月 2022 21:43:08,266 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:149)  - Component type: CHANNEL, name: c3 stopped
+25 十月 2022 21:43:08,266 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:155)  - Shutdown Metric for type: CHANNEL, name: c3. channel.start.time == 1666701493492
+25 十月 2022 21:43:08,266 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:161)  - Shutdown Metric for type: CHANNEL, name: c3. channel.stop.time == 1666705388266
+25 十月 2022 21:43:08,267 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: c3. channel.capacity == 1000
+25 十月 2022 21:43:08,267 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: c3. channel.current.size == 0
+25 十月 2022 21:43:08,267 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: c3. channel.event.put.attempt == 3
+25 十月 2022 21:43:08,267 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: c3. channel.event.put.success == 3
+25 十月 2022 21:43:08,267 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: c3. channel.event.take.attempt == 496
+25 十月 2022 21:43:08,267 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: c3. channel.event.take.success == 3
+25 十月 2022 21:43:08,267 INFO  [agent-shutdown-hook] (org.apache.flume.lifecycle.LifecycleSupervisor.stop:78)  - Stopping lifecycle supervisor 18
