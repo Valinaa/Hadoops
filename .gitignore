@@ -3,11 +3,11 @@
 !LICENSE
 !NOTICE
 !README.md
-!**/conf/**/*
-!**/config/**/*
-!flume-1.10.1/jobs/**/*
-!hadoop-3.3.4/etc/hadoop/**/*
+!**/conf/*
+!**/config/*
+!flume-1.10.1/jobs/*
+!hadoop-3.3.4/etc/hadoop/*
 !sqoop-1.4.7/*.jar
 !sqoop-1.4.7/lib
 !tools/*
-!test_data/**/*
+!test_data/*
