@@ -3,7 +3,7 @@
 !**/README.md 
 
 hadoop-3.3.4/*
-!hadoop-3.3.4/etc/*
+!hadoop-3.3.4/etc/
 
 efak/*
 flume-1.10.1/*
@@ -16,8 +16,8 @@ sqoop-1.4.7/*
 zeppelin-0.10.1/*
 zookeeper/*
 
-!**/conf/*
-!**/config/*
-!flume-1.10.1/jobs/*
+!**/conf/
+!**/config/
+!flume-1.10.1/jobs/
 !sqoop-1.4.7/*.jar
-!sqoop-1.4.7/lib/*
+!sqoop-1.4.7/lib/
